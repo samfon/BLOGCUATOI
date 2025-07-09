@@ -7,6 +7,7 @@ import {
   useCallback,
 } from "react";
 import { User, getAuth, onAuthStateChanged } from "firebase/auth";
+import { app } from "@/firebaseConfig";
 import {
   getFirestore,
   collection,
@@ -19,8 +20,8 @@ import {
   query,
   orderBy,
 } from "firebase/firestore";
-// *** SỬA LỖI IMPORT Ở ĐÂY ***
-import app from "@/firebaseConfig"; // Bỏ dấu ngoặc {}
+// *** SỬA LỖI ĐƯỜNG DẪN BẰNG PATH TƯƠNG ĐỐI ***
+import { auth, db } from '../firebaseConfig';
 
 // --- ĐỊNH NGHĨA KIỂU DỮ LIỆU ---
 
