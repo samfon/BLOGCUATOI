@@ -1,19 +1,18 @@
 // Import the functions you need from the SDKs you need
-import { initializeApp } from 'firebase/app';
-import { getAuth } from 'firebase/auth';
-import { getFirestore } from 'firebase/firestore';
+import { initializeApp } from "firebase/app";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
 
-// Your web app's Firebase configuration - PROJECT MỚI
+// Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "your-new-api-key",
+  apiKey: "AIzaSyB0lMjGsTjkCJaksci4F_d2uC2DqSCcobw",
   authDomain: "samfon-337.firebaseapp.com",
-  projectId: "samfon-337",  // Project ID mới
-  storageBucket: "samfon-337.appspot.com",
-  messagingSenderId: "your-new-sender-id",
-  appId: "your-new-app-id"
+  projectId: "samfon-337",
+  storageBucket: "samfon-337.firebasestorage.app",
+  messagingSenderId: "558711359678",
+  appId: "1:558711359678:web:400d4142268c20afc276ef"
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-export const auth = getAuth(app);
-export const db = getFirestore(app);
+export default app;
